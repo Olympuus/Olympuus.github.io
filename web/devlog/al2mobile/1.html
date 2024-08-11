@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Devlog</title>
+    <style>
+        body {
+            font-family: 'PixelFont', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../Background.jpg') repeat;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(34, 34, 34, 0.95);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .devlog-group-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+        .devlog-group {
+            font-size: 1.2em;
+            color: #f0c674;
+        }
+        .post-date {
+            font-size: 1em;
+            color: #888;
+        }
+        .post-title {
+            font-size: 2.5em;
+            color: #f0c674;
+            text-shadow: 2px 2px #000;
+        }
+        .post-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="devlog-group-date">
+            <span class="devlog-group">Assembly Line 2 Mobile Version DevLog #1</span>
+            <span class="post-date">August 11, 2024</span>
+        </div>
+        <h1 class="post-title">What's Next</h1>
+        <div class="post-content">
+            <p>With the focus on the development Desktop version, the Mobile version has been a bit "neglected", which I first want to apologize for. However, since the Desktop version has been released, I can now focus on both simultaneously.</p>
+            <p>The first thing that I will now be focusing on in the Mobile version is the Editing Tool, and the whole line editing "flow". It isn't the best right now, especially if you are building large lines, and I want to improve this. </p>
+            <p>Let's give an example if you wanted to move some machines, at the moment, you have to individually select one by one, tap-and-hold the screen, and then move. If you thought that maybe you wanted to copy instead of move, you had to select them all over again. When it is only two or three machines, that's okay, but when you start making large lines with tons of machines, moving and copying become a cumbersome task.</p> 
+            <p>When developing the Desktop version, I made it from the ground up, with all the knowledge and suggestions that I received from the Mobile version, and now, I want to take that into the Mobile version. As some of you already played the Desktop version, You can see that the selection of the machines, and the copying/moving are "separate", so you can select all the machines you want, and then decide if you want to copy or you want to move. Another thing is the ability to select them in an area. You can also rotate multiple machines while keeping them "grouped".</p>
+            <p>To be honest, I am not sure yet how exactly I will implement this in a Mobile environment, I have seen some suggestions, and I have begun the development of this new Editing Tool and will be testing different things to try to figure out how to best approach this.</p>
+            <p>When I have more "final" solutions, I will be sure to show them and gather feedback from the community.</p>
+            <p>I was suggested to create these types of posts, which help show the community what is going on with the development of the game and the direction it is taking and I will try to continue this on both versions of the game.</p>
+            <p>Thank you for reading and thank you for playing the game.</p>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
