@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLog</title>
+    <style>
+        body {
+            font-family: 'PixelFont', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../Background.jpg') repeat;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(34, 34, 34, 0.95);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .devlog-group-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+        .devlog-group {
+            font-size: 1.2em;
+            color: #f0c674;
+        }
+        .post-date {
+            font-size: 1em;
+            color: #888;
+        }
+        .post-title {
+            font-size: 2.5em;
+            color: #f0c674;
+            text-shadow: 2px 2px #000;
+        }
+        .post-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="devlog-group-date">
+            <span class="devlog-group">Assembly Line 2 Desktop Version DevLog #2</span>
+            <span class="post-date">September 2, 2024</span>
+        </div>
+        <h1 class="post-title">New machines</h1>
+        <div class="post-content">
+            <p style="white-space: pre-wrap; word-wrap: break-word;">Like I said in the previous DevLog, the next update to Assembly Line 2 Desktop will bring a few new machines to give more options for better efficiency. So in this DevLog, I want to show them the progress on these machines. Previously I talked about a Split-Selector and an Alternator Starter machine, this two I can confirm will be added. There is also another one that I am experimenting with, which I have not decided if I will add.</p>
+            <h2>Alternator Starter</h2>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">The Alternator Starter is a great new machine that will help with those blueprints that might need an odd amount of resources, or maybe for better efficiency, or any other reason that you might need different ratios of resources. You can select two different resources, the ratio for each resource and like the normal Starter, the spawn time.</p>
+            <img src="assets/2/alternator_starter_ui.png" width="600">
+            <video width="600" controls>
+                <source src="assets/2/alternator_starter_ui.mp4" type="video/mp4">
+            </video>
+            <h2>Split-Selector</h2>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">The Split Selector is a nice help with redirecting resources, with it, you can more easily distribute the same resource around and with better control over quantity. You select which resource it would "Select", and you select the ratio to split to the left, and the ratio to the right.</p>
+            <img src="assets/2/split_selector_ui.png" width="600">
+            <video width="600" controls>
+                <source src="assets/2/split_selector_video.mp4" type="video/mp4">
+            </video>
+            <h2>Dual Starter</h2>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">The Dual-Starter is a machine that, like I said, I am still testing to see if it would be a good balance addition to the game. It is basically the normal Starter, but it spawn two resources at the same time, one to each side. I think that if implemented, it would be a different count and limit to the Starter, and with more costly upgrades. The machine isn't fully implemented, so ignore, the indicator colors, and the lack of UI, this would be implemented if added to the game. Let me know your opinion on this machine.</p>
+            <video width="600" controls>
+                <source src="assets/2/dual_starter_video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
