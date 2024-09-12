@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLog</title>
+    <style>
+        body {
+            font-family: 'PixelFont', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../Background.jpg') repeat;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(34, 34, 34, 0.95);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .devlog-group-date {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+        .devlog-group {
+            font-size: 1.2em;
+            color: #f0c674;
+        }
+        .post-date {
+            font-size: 1em;
+            color: #888;
+        }
+        .post-title {
+            font-size: 2.5em;
+            color: #f0c674;
+            text-shadow: 2px 2px #000;
+        }
+        .post-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="devlog-group-date">
+            <span class="devlog-group">Assembly Line 2 Mobile Version DevLog #2</span>
+            <span class="post-date">September 12, 2024</span>
+        </div>
+        <h1 class="post-title">Improvements to the Editing tool</h1>
+        <div class="post-content">
+            <p style="white-space: pre-wrap; word-wrap: break-word;">Following up on the previous mobile version DevLog, I've been working on improving the editing tool and the whole editing flow. I've been experimenting with different ways to improve it and would like to present the current state of it. Note that the UI is just a placeholder to test different things quickly, it will change when the update is finally released.</p>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">The improvements made make the tool pretty close to how the desktop version editing tool works, you have a Build tool, a select tool, and a rotate/delete tool to quickly delete or rotate a single machine. Now, the big improvement comes in the select tool. You will finally be able to box-select machines to quickly select the machines you wish to edit. To differentiate between a camera drag, or a box selection, when inside the select tool, you will use two-finger drag to move the camera around, and one-finger drag to box-select, in my own testing this order was best, but i want to hear your opinion, if you would prefer the other way around.</p>
+            <video height="500" controls>
+                <source src="assets/2/selection.mp4" type="video/mp4">
+            </video>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">Previously, when selecting machines to copy or move, if you selected them, let's say, to move, and instead you wanted to copy, you had to re-select them all over again with the copy tool. Now, they act more independently. After selecting, you can choose to copy, or move.</p>
+            <video height="500" controls>
+                <source src="assets/2/moving.mp4" type="video/mp4">
+            </video>
+            <video height="500" controls>
+                <source src="assets/2/copying.mp4" type="video/mp4">
+            </video>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">As you may see in the previous video, the moving of machines now works a bit different as well. Now, when starting the move, the selected machines "stick" to the center of the screen, and by moving the camera, you move the machines. This makes it easier for the new features to come in, one of these that is currently implemented is the ability to rotate all the machines being moved.</p>
+            <video height="500" controls>
+                <source src="assets/2/rotating.mp4" type="video/mp4">
+            </video>
+            <p style="white-space: pre-wrap; word-wrap: break-word;">There is still more work to be done to this since it is being done from scratch, but I believe that is in a good direction. I want to hear your opinions on this, do you think that the changes made are positive, and do you think the controls would feel good?</p>
+        </div>
+    </div>
+</body>
+</html>
